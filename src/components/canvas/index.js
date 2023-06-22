@@ -1,6 +1,6 @@
 import EarthCanvas from './Earth'
-import BallCanvas from './Ball'
+import TechCard from './TechCard'
 import ComputersCanvas from './Computers'
 import StarsCanvas from './Stars'
 
-export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas }
+export { EarthCanvas, TechCard, ComputersCanvas, StarsCanvas }

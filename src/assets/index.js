@@ -14,12 +14,18 @@ import git from './tech/git.png'
 import html from './tech/html.png'
 import javascript from './tech/javascript.png'
 import mongodb from './tech/mongodb.png'
+import postgres from './tech/postgres.png'
 import nodejs from './tech/nodejs.png'
 import reactjs from './tech/reactjs.png'
 import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
+import express from './tech/expressjs.png'
+import socketIO from './tech/socket.io.png'
+import nestjs from './tech/nestjs.png'
+import nextjs from './tech/nextjs.png'
+import nextjsauth from './tech/nextjsauth.png'
 
 import meta from './company/meta.png'
 import shopify from './company/shopify.png'
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  postgres,
+  express,
+  socketIO,
+  nestjs,
+  nextjs,
+  nextjsauth,
 }

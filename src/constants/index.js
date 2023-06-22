@@ -23,7 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
-} from '../../public/assets'
+  postgres,
+  express,
+  nestjs,
+  nextjsauth,
+  socketIO,
+  nextjs,
+} from '../assets'
 
 export const navLinks = [
   {
@@ -46,7 +52,7 @@ const services = [
     icon: web,
   },
   {
-    title: 'React Native Developer',
+    title: 'Frontend Developer',
     icon: mobile,
   },
   {
@@ -54,7 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Content Creator',
+    title: 'Figma Designer',
     icon: creator,
   },
 ]
@@ -93,12 +99,32 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: 'Express JS',
+    icon: express,
+  },
+  {
+    name: 'Socket.IO',
+    icon: socketIO,
+  },
+  {
+    name: 'Nest JS',
+    icon: nestjs,
+  },
+  {
     name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'PostgreSQL',
+    icon: postgres,
+  },
+  {
+    name: 'Next JS',
+    icon: nextjs,
+  },
+  {
+    name: 'Nest JS Auth',
+    icon: nextjsauth,
   },
   {
     name: 'git',
