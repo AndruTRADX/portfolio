@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles/styles'
 import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    setIsMobile(mediaQuery.matches)
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -17,16 +31,16 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            <span className="sm:inline-block hidden">Hola, </span>Yo soy <span className="text-[#915EFF]">Andrés</span>
+            <span className="sm:inline-block hidden">Hola, </span>Yo soy{' '}
+            <span className="text-[#915EFF]">Andrés</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-secondary`}>
-            Desarrollador fullstack <br className="sm:hidden block" />
-            apasionado por el mundo de la tecnología.
+            Desarrollador fullstack apasionado por el mundo de la tecnología.
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {isMobile ? '' : <ComputersCanvas />}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
