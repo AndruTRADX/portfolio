@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
@@ -14,6 +14,20 @@ const Contact = () => {
     email: '',
     message: '',
   })
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    setIsMobile(mediaQuery.matches)
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
 
   const [loading, setLoading] = useState(false)
 
@@ -126,12 +140,16 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {isMobile ? (
+        <></>
+      ) : (
+        <motion.div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] sm:hidden"
+        >
+          <EarthCanvas />
+        </motion.div>
+      )}
     </div>
   )
 }

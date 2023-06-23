@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   About,
   Contact,
@@ -13,6 +13,20 @@ import {
 } from './components'
 
 const App = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    setIsMobile(mediaQuery.matches)
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -27,7 +41,7 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          {isMobile ? '' : <StarsCanvas />}
         </div>
       </div>
     </BrowserRouter>
