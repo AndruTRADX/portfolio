@@ -125,7 +125,9 @@ const Works = () => {
         >
           Estos proyectos son una muestra de mi dominio en las tecnologías que
           manejo. Son demostraciones de proyectos reales que utilizan mi stack
-          tecnológico, cada uno con diferentes funcionalidades. Encontrarás el
+          tecnológico, cada uno con diferentes funcionalidades. Dependiendo de
+          que tipos de proyectos quieres ver (Fullstack, backend, etc.)
+          seleccionandolos con los botones que vez abajo, encontrarás el
           repositorio de código en Github de cada proyecto, así como, en algunos
           casos, un pequeño demo en vivo para que puedas explorarlo en acción.
         </motion.p>
@@ -136,7 +138,7 @@ const Works = () => {
           <motion.button
             variants={fadeIn('right', 'spring', 0.125 * index, 0.75)}
             key={`type-project-${index}`}
-            className={`green-pink-gradient p-[1px] rounded-[20px] cursor-pointer ${
+            className={`p-[1px] rounded-xl cursor-pointer outline-none font-bold shadow-md shadow-tertiary ${
               projectType === typeProject
                 ? 'bg-tertiary'
                 : 'green-pink-gradient'
@@ -147,7 +149,7 @@ const Works = () => {
                 projectType === typeProject
                   ? 'green-pink-gradient'
                   : 'bg-tertiary'
-              } px-5 py-3 rounded-[20px]`}
+              } px-6 py-4 rounded-xl`}
               onClick={() => setProjectType(typeProject)}
             >
               {typeProject}

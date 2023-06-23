@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { useRef, useEffect, useState } from 'react'
+import { base64img } from './img'
 
 export default function LazyImg({ src, ...imgProps }) {
   const node = useRef(null)
-  const [currentSrc, setCurrentSrc] = useState(
-    'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4=',
-  )
+  const [currentSrc, setCurrentSrc] = useState(base64img)
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
