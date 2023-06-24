@@ -9,7 +9,7 @@ const TechCard = (props) => {
   return (
     <div className="w-[112px] h-auto">
       <motion.div
-        variants={fadeIn('right', 'spring', 0.125 * props.index, 0.75)}
+        variants={fadeIn('right', 'spring', 0.25 * props.index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <motion.div

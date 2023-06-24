@@ -133,8 +133,8 @@ const Contact = () => {
       >
         <Tilt className="w-[200px] h-[200px] xl:w-[400px] xl:h-[400px] xl:block hidden p-[4px] green-pink-gradient rounded-full">
           <LazyImg
-            className="w-full rounded-full top-0"
-            src="https://i.ibb.co/3zVy79R/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
+            className="w-full rounded-full top-0 shadow-xl shadow-violet-500"
+            src="https://i.ibb.co/YhcwLTb/DALL-E-2023-04-18-16-46-27-A-cool-cat-with-a-sweater-writting-code-in-a-macbook.png"
             alt="Este soy yo, bien guapo"
           />
         </Tilt>

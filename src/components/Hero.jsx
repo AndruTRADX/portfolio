@@ -20,18 +20,22 @@ const Hero = () => {
             <span className="sm:inline-block hidden">Hola, </span>Yo soy{' '}
             <span className="text-[#915EFF]">Andrés</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-secondary`}>
+          <p className={`${styles.heroSubText} mt-4 text-secondary`}>
             Desarrollador fullstack apasionado por el mundo de la tecnología.
           </p>
         </div>
       </div>
 
-      <div className="w-[180px] h-[180px] md:w-[240px] md:h-[240px] p-[2px] green-pink-gradient rounded-full absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <LazyImg
-          className="w-full rounded-full top-0"
-          src="https://i.ibb.co/X86ZbrY/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
-          alt="Este soy yo, bien guapo"
-        />
+      <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div
+          className="rounded-full w-[180px] h-[180px] md:w-[240px] md:h-[240px] p-[2px] green-pink-gradient"
+        >
+          <LazyImg
+            className="w-full rounded-full top-0 shadow-lg shadow-violet-500"
+            src="https://i.ibb.co/X86ZbrY/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
+            alt="Este soy yo, bien guapo"
+          />
+        </div>
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
