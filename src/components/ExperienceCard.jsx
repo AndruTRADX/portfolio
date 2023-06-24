@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
+import LazyImg from './utils/LazyImage'
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -14,7 +15,7 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <img
+          <LazyImg
             src={experience.icon}
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"

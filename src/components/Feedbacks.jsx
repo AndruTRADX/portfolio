@@ -6,6 +6,7 @@ import { styles } from '../styles/styles'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
 import { testimonials } from '../constants'
+import LazyImg from './utils/LazyImage'
 
 const FeedbackCard = ({
   index,
@@ -34,7 +35,7 @@ const FeedbackCard = ({
           </p>
         </div>
 
-        <img
+        <LazyImg
           src={image}
           alt={`feedback_by-${name}`}
           className="w-10 h-10 rounded-full object-cover"
@@ -57,7 +58,11 @@ const Feedbacks = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={`testimonial-${index}`} index={index} {...testimonial} />
+          <FeedbackCard
+            key={`testimonial-${index}`}
+            index={index}
+            {...testimonial}
+          />
         ))}
       </div>
     </div>

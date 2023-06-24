@@ -126,7 +126,10 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <div className="flex flex-[1] justify-center items-center">
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 0.75)}
+        className="flex flex-[1] justify-center items-center"
+      >
         <div className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] p-[2px] green-pink-gradient rounded-full">
           <LazyImg
             className="w-full rounded-full top-0"
@@ -134,7 +137,7 @@ const Contact = () => {
             alt="Este soy yo, bien guapo"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
