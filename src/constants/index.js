@@ -3,25 +3,6 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  postgres,
-  express,
-  nestjs,
-  nextjsauth,
-  socketIO,
-  nextjs,
-  vitejs,
 } from '../assets'
 
 export const navLinks = [
@@ -61,79 +42,79 @@ const services = [
 const technologies = [
   {
     name: 'HTML 5',
-    icon: html,
+    icon: 'https://i.ibb.co/g6DHN00/html.png',
   },
   {
     name: 'CSS 3',
-    icon: css,
+    icon: 'https://i.ibb.co/6mkf1GS/css.png',
   },
   {
     name: 'JavaScript',
-    icon: javascript,
+    icon: 'https://i.ibb.co/5nM4qpY/javascript.png',
   },
   {
     name: 'TypeScript',
-    icon: typescript,
+    icon: 'https://i.ibb.co/19sKygG/typescript.png',
   },
   {
     name: 'React JS',
-    icon: reactjs,
+    icon: 'https://i.ibb.co/D4QSYn0/reactjs.png',
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'Redux',
+    icon: 'https://i.ibb.co/P6DtQrN/redux.png',
   },
   {
     name: 'Tailwind CSS',
-    icon: tailwind,
+    icon: 'https://i.ibb.co/tcjmgQx/tailwind.png',
   },
   {
     name: 'Node JS',
-    icon: nodejs,
+    icon: 'https://i.ibb.co/WcvCx9s/nodejs.png',
   },
   {
     name: 'Express JS',
-    icon: express,
+    icon: 'https://i.ibb.co/KVRtGsx/expressjs.png',
   },
   {
     name: 'Socket.IO',
-    icon: socketIO,
+    icon: 'https://i.ibb.co/c8wX4gJ/socket-io.png',
   },
   {
     name: 'Nest JS',
-    icon: nestjs,
+    icon: 'https://i.ibb.co/tbHYmNd/nestjs.png',
   },
   {
     name: 'MongoDB',
-    icon: mongodb,
+    icon: 'https://i.ibb.co/f9fDtQz/mongodb.png',
   },
   {
     name: 'PostgreSQL',
-    icon: postgres,
+    icon: 'https://i.ibb.co/R4znCTz/postgres.png',
   },
   {
     name: 'Next JS',
-    icon: nextjs,
+    icon: 'https://i.ibb.co/R6T0547/nextjs.png',
   },
   {
     name: 'Nest JS Auth',
-    icon: nextjsauth,
+    icon: 'https://i.ibb.co/WV0HRT8/nextjsauth.png',
   },
   {
     name: 'git',
-    icon: git,
+    icon: 'https://i.ibb.co/Y2mgwt7/git.png',
   },
   {
     name: 'figma',
-    icon: figma,
+    icon: 'https://i.ibb.co/1Q6JN2q/figma.png',
   },
   {
     name: 'Vite JS',
-    icon: vitejs,
+    icon: 'https://i.ibb.co/TWLrQSY/vite.png',
   },
   {
     name: 'docker',
-    icon: docker,
+    icon: 'https://i.ibb.co/xL8Vw8P/docker.png',
   },
 ]
 
