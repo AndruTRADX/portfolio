@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import React from 'react'
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../utils/motion'
+import LazyImg from '../utils/LazyImage'
 
 const TechCard = (props) => {
   return (
-    <Tilt className="w-[112px] h-auto">
+    <div className="w-[112px] h-auto">
       <motion.div
         variants={fadeIn('right', 'spring', 0.125 * props.index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -20,7 +20,7 @@ const TechCard = (props) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-2 flex justify-evenly items-center flex-col"
         >
-          <img
+          <LazyImg
             src={props.icon}
             alt={props.name}
             className="w-16 h-16 object-contain"
@@ -30,7 +30,7 @@ const TechCard = (props) => {
           </h3>
         </motion.div>
       </motion.div>
-    </Tilt>
+    </div>
   )
 }
 

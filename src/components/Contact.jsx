@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
 import { styles } from '../styles/styles'
-import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import LazyImg from './utils/LazyImage'
 
 const Contact = () => {
   const formRef = useRef()
@@ -14,20 +14,6 @@ const Contact = () => {
     email: '',
     message: '',
   })
-
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)')
-    setIsMobile(mediaQuery.matches)
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches)
-    }
-    mediaQuery.addEventListener('change', handleMediaQueryChange)
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange)
-    }
-  }, [])
 
   const [loading, setLoading] = useState(false)
 
@@ -140,16 +126,15 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      {isMobile ? (
-        <></>
-      ) : (
-        <motion.div
-        variants={slideIn('right', 'tween', 0.2, 0.75)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        >
-          <EarthCanvas />
-        </motion.div>
-      )}
+      <div className="flex flex-[1] justify-center items-center">
+        <div className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] p-[2px] green-pink-gradient rounded-full">
+          <LazyImg
+            className="w-full rounded-full top-0"
+            src="https://i.ibb.co/X86ZbrY/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
+            alt="Este soy yo, bien guapo"
+          />
+        </div>
+      </div>
     </div>
   )
 }

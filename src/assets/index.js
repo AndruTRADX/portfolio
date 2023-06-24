@@ -29,11 +29,6 @@ import nextjs from './tech/nextjs.png'
 import nextjsauth from './tech/nextjsauth.png'
 import vitejs from './tech/vite.png'
 
-import meta from './company/meta.png'
-import shopify from './company/shopify.png'
-import starbucks from './company/starbucks.png'
-import tesla from './company/tesla.png'
-
 export {
   logo,
   backend,
@@ -57,10 +52,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   postgres,
   express,
   socketIO,
