@@ -6,6 +6,7 @@ import { styles } from '../styles/styles'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import LazyImg from './utils/LazyImage'
+import { Tilt } from 'react-tilt'
 
 const Contact = () => {
   const formRef = useRef()
@@ -130,13 +131,13 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 0.75)}
         className="flex flex-[1] justify-center items-center"
       >
-        <div className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] p-[2px] green-pink-gradient rounded-full">
+        <Tilt className="w-[200px] h-[200px] xl:w-[400px] xl:h-[400px] xl:block hidden p-[4px] green-pink-gradient rounded-full">
           <LazyImg
             className="w-full rounded-full top-0"
-            src="https://i.ibb.co/X86ZbrY/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
+            src="https://i.ibb.co/3zVy79R/Whats-App-Image-2022-10-07-at-10-02-43-AM.jpg"
             alt="Este soy yo, bien guapo"
           />
-        </div>
+        </Tilt>
       </motion.div>
     </div>
   )
