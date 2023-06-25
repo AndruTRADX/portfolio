@@ -5,6 +5,7 @@ import {
   Contact,
   Experience,
   Feedbacks,
+  Footer,
   Hero,
   Navbar,
   StarsCanvas,
@@ -43,6 +44,7 @@ const App = () => {
           <Contact />
           {isMobile ? '' : <StarsCanvas />}
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   )

@@ -3,6 +3,9 @@ import {
   backend,
   creator,
   web,
+  linkedin,
+  github,
+  platzi,
 } from '../assets'
 
 export const navLinks = [
@@ -506,5 +509,23 @@ const frontendProjects = [
 ]
 
 const projectsTypes = ['mvp', 'fullstack', 'backend', 'frontend']
+
+export const socials = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/andrutradx/',
+    url: linkedin,
+  },
+  {
+    name: 'github',
+    link: 'https://github.com/AndruTRADX',
+    url: github,
+  },
+  {
+    name: 'platzi',
+    link: 'https://platzi.com/p/AndruTRADX/',
+    url: platzi,
+  },
+]
 
 export { services, technologies, experiences, testimonials, projects, fullstackProjects, backendProjects, frontendProjects, projectsTypes }
