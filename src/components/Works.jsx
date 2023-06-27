@@ -138,7 +138,7 @@ const Works = () => {
           <motion.button
             variants={fadeIn('right', 'spring', 0.125 * index, 0.75)}
             key={`type-project-${index}`}
-            className={`p-[1px] rounded-xl cursor-pointer outline-none font-bold shadow-md shadow-tertiary ${
+            className={`p-[1px] rounded-xl cursor-pointer outline-none font-bold shadow-md shadow-tertiary capitalize ${
               projectType === typeProject
                 ? 'bg-tertiary'
                 : 'green-pink-gradient'

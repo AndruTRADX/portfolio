@@ -7,8 +7,9 @@ const Footer = () => (
   <footer
     className={`${styles.paddingX} py-8 relative`}
   >
-    <div className="footer-gradient" />
-    <div className="2xl:max-w-[1280px] w-full' mx-auto flex flex-col gap-8">
+    <div className="footer-gradient hidden md:flex" />
+    <div className="footer-gradient-md flex md:hidden" />
+    <div className="2xl:max-w-[1280px] w-full' mx-auto  flex-col gap-8">
 
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />

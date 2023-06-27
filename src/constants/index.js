@@ -194,6 +194,28 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'Flexibble',
+    description:
+      'Plataforma CRUD fullstack con autenticación en google auth en la que puedes compartir tus proyectos como developer.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Grafbase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: 'https://i.ibb.co/QfbVYfp/imagen-2023-06-27-164019434.png',
+    source_code_link: 'https://github.com/AndruTRADX/flexibble',
+    soure_project_link: 'https://flexibble-iota.vercel.app/'
+  },
+  {
     name: 'Fullstack Tables',
     description:
       'Plataforma CRUD fullstack con autenticación con una expreriencia de usuario agradable.',
@@ -237,17 +259,20 @@ const projects = [
     source_code_link: 'https://github.com/AndruTRADX/promptopia',
     soure_project_link: 'https://nextjs-promptopia-seven.vercel.app/'
   },
+]
+
+const fullstackProjects = [
   {
-    name: 'Metaversus',
+    name: 'Flexibble',
     description:
-      'Aplicación UI con React y Framer Motion',
+      'Plataforma CRUD fullstack con autenticación en google auth en la que puedes compartir proyectos como developer.',
     tags: [
       {
-        name: 'React',
+        name: 'NextJS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'FramerMotion',
+        name: 'Grafbase',
         color: 'green-text-gradient',
       },
       {
@@ -255,13 +280,10 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: 'https://i.ibb.co/SBS1Gff/imagen-2023-06-23-105633430.png',
-    source_code_link: 'https://github.com/AndruTRADX/metaversus',
-    soure_project_link: 'https://metaversus-andrutradx.vercel.app/'
+    image: 'https://i.ibb.co/QfbVYfp/imagen-2023-06-27-164019434.png',
+    source_code_link: 'https://github.com/AndruTRADX/flexibble',
+    soure_project_link: 'https://flexibble-iota.vercel.app/'
   },
-]
-
-const fullstackProjects = [
   {
     name: 'Fullstack Tables',
     description:

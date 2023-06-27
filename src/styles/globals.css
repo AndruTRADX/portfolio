@@ -213,3 +213,15 @@
   background: #915EFF;
   filter: blur(150px);
 }
+
+.footer-gradient-md {
+  position: absolute;
+  width: 190px;
+  height: 100px;
+  left: 37%;
+  bottom: 0;
+
+  background: #915EFF;
+  filter: blur(150px);
+}
+
