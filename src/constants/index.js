@@ -265,7 +265,7 @@ const fullstackProjects = [
   {
     name: 'Flexibble',
     description:
-      'Plataforma CRUD fullstack con autenticación en google auth en la que puedes compartir proyectos como developer.',
+      'Plataforma CRUD fullstack con autenticación en google auth en la que puedes compartir tus proyectos como developer.',
     tags: [
       {
         name: 'NextJS',

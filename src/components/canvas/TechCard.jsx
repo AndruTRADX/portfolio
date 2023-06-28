@@ -25,7 +25,7 @@ const TechCard = (props) => {
             alt={props.name}
             className="w-16 h-16 object-contain"
           />
-          <h3 className="text-white text-[16px] my-2 font-bold text-center">
+          <h3 className="text-white text-[16px] my-2 font-bold text-center capitalize">
             {props.name}
           </h3>
         </motion.div>
